@@ -1,3 +1,5 @@
+package com.examples;
+
 public enum Cerials {
     CAPTAIN_CRUNCH(10),
     CHEERIOS(5),

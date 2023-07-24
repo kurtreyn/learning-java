@@ -1,3 +1,5 @@
+package com.examples;
+
 public class AppSubClass {
     private String name;
     public String email;
