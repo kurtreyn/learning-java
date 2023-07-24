@@ -1,7 +1,9 @@
+package com.examples;
+
 public class GameRunner {
 
 	public static void main(String[] args) {
-//		MarioGame game = new MarioGame();
+//		com.examples.MarioGame game = new com.examples.MarioGame();
 		GamingConsole marioGame = new MarioGame();
 		GamingConsole chessGame = new ChessGame();
 

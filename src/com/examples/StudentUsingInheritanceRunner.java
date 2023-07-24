@@ -1,3 +1,5 @@
+package com.examples;
+
 public class StudentUsingInheritanceRunner {
 
 	public static void main(String[] args) {

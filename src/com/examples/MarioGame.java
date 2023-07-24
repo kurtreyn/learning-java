@@ -1,3 +1,5 @@
+package com.examples;
+
 public class MarioGame implements GamingConsole {
 
 	@Override

@@ -1,3 +1,5 @@
+package com.examples;
+
 public class Person extends Object {
 	private String name;
 	private String email;

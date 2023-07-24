@@ -1,3 +1,5 @@
+package com.examples;
+
 public class StringRunner {
 
 	public static void main(String[] args) {

@@ -1,3 +1,5 @@
+package com.examples;
+
 public interface GamingConsole {
 	public void up();
 

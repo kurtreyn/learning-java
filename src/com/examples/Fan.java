@@ -1,3 +1,5 @@
+package com.examples;
+
 public class Fan {
 	// state
 	private String make;
