@@ -1,3 +1,5 @@
+package com.examples;
+
 public class StudentUsingInheritance extends Person {
 
 	private String collegeName;

@@ -1,3 +1,5 @@
+package com.examples;
+
 public class Customer {
 	// state
 	private String name;

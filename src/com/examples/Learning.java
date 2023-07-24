@@ -1,3 +1,5 @@
+package com.examples;
+
 public class Learning {
 
     int num;

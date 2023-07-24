@@ -1,3 +1,5 @@
+package com.examples;
+
 import java.math.BigDecimal;
 
 public class Employee extends Person {
