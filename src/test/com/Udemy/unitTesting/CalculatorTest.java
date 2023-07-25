@@ -1,4 +1,4 @@
-package test.test.com.Udemy.unitTesting;
+package test.com.Udemy.unitTesting;
 
 import com.Udemy.unitTesting.Calculator;
 import org.junit.jupiter.api.Test;
