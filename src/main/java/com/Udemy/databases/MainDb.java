@@ -4,9 +4,10 @@ public class MainDb {
 
     public static void main(String[] args) {
         DbManager dbManager = new DbManager();
+        UserInput userInput = UserInput.createUser();
         dbManager.getConnectionCreateTable();
-        dbManager.insertIntoDb("Tim", 3331234, "time@email.com");
-
+//        dbManager.insertIntoDb("Tim", 3331234, "time@email.com");
+        dbManager.insertIntoDb(userInput.getName(), userInput.getPhone(), userInput.getEmail());
         dbManager.closeConnection();
 
 
