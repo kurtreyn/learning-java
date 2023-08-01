@@ -3,7 +3,7 @@ package com.Udemy.lambda;
 public class Cat implements Printable{
 
     public String name;
-    public int age;
+//    public int age;
 
     public Cat(){
 
