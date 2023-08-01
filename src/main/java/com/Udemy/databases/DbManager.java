@@ -1,9 +1,6 @@
 package com.Udemy.databases;
 
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.SQLException;
-import java.sql.Statement;
+import java.sql.*;
 
 public class DbManager {
    private Connection conn;
@@ -24,6 +21,35 @@ public class DbManager {
     public void insertIntoDb(String name, int phone, String email) {
         try {
             statement.execute("INSERT INTO contacts (name, phone, email) VALUES ('" + name + "', " + phone + ", '" + email + "')");
+        } catch(SQLException e) {
+            System.out.println("Something went wrong: " + e.getMessage());
+        }
+    }
+
+    public void updateDbEntry(String name, int phone, String email) {
+        try {
+            statement.execute("UPDATE contacts SET phone = " + phone + ", email = '" + email + "' WHERE name = '" + name + "'");
+        } catch(SQLException e) {
+            System.out.println("Something went wrong: " + e.getMessage());
+        }
+    }
+
+    public void deleteDbEntry(String name) {
+        try {
+            statement.execute("DELETE FROM contacts WHERE name = '" + name + "'");
+        } catch(SQLException e) {
+            System.out.println("Something went wrong: " + e.getMessage());
+        }
+    }
+
+    public void queryDb() {
+        try {
+            statement.execute("SELECT * FROM contacts");
+            ResultSet results = statement.getResultSet();
+            while(results.next()) {
+                System.out.println(results.getString("name") + " " + results.getInt("phone") + " " + results.getString("email"));
+            }
+            results.close();
         } catch(SQLException e) {
             System.out.println("Something went wrong: " + e.getMessage());
         }

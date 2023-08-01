@@ -8,6 +8,7 @@ public class MainDb {
         dbManager.getConnectionCreateTable();
 //        dbManager.insertIntoDb("Tim", 3331234, "time@email.com");
         dbManager.insertIntoDb(userInput.getName(), userInput.getPhone(), userInput.getEmail());
+        dbManager.queryDb();
         dbManager.closeConnection();
 
 
