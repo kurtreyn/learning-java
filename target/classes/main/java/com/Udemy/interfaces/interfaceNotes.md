@@ -1,0 +1,6 @@
+- An interface lets us treat an instance of a single class as many different types
+- The Bird class inherits behavior and attributes from Animals, because we used the extends keyword in the declaration of Bird
+- Because the move method was abstract on Animals, Bird was required to implement it
+- The Bird class also implements the Flyable interface
+- This required the Bird class to implement the takeOff, fly, and land methods, the abstract methods on FlightEnabled
+- Interfaces let us take objects, that may have almost nothing in common, and write reusable code, so we can process them all in a like manner
